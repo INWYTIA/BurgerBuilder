@@ -1,0 +1,27 @@
+<img src="assets/img/burger.png" alt="Burger!">
+
+<h1>Burger Builder</h1>
+
+<h2>Menu</h2>
+
+<ul>
+  {{#each burgers}}
+    <li>
+      {{burger_name}}
+      <button class="devour" data-id="{{id}}">
+        Devour It!
+      </button>
+    </li>
+  {{/each}}
+</ul>
+
+<h2>What's your craving?</h2>
+<form class="newBurger">
+
+  <div class="form-group">
+    <label for="myBurg">Name That Burger!</label>
+    <input type="text" id="myBurg" name="burger_name">
+  </div>
+
+  <button type="submit">Order Up!</button>
+</form>

@@ -1,4 +1,4 @@
-const connection = require("../config/connection.js");
+const connection = require("./connection.js");
 
 function printQuestionMarks(num) {
   var arr = [];
@@ -60,19 +60,6 @@ const orm = {
 
     queryString += " SET ";
     queryString += objToSql(objColVals);
-    queryString += " WHERE ";
-    queryString += condition;
-
-    connection.query(queryString, function(err, result) {
-      if (err) {
-        throw err;
-      }
-
-      cb(result);
-    });
-  },
-  delete: function(table, condition, cb) {
-    var queryString = "DELETE FROM " + table;
     queryString += " WHERE ";
     queryString += condition;
 
