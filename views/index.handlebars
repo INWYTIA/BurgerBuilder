@@ -6,7 +6,7 @@
 
 <ul>
   {{#each burgers}}
-    <li>
+    <li class="{{#if devoured}}gone{{else}}ready{{/if}}">
       {{burger_name}}
       <button class="devour" data-id="{{id}}">
         Devour It!
