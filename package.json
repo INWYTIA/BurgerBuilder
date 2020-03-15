@@ -1,0 +1,28 @@
+{
+  "name": "burgerbuilder",
+  "version": "1.0.0",
+  "description": "a burger building service",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/INWYTIA/BurgerBuilder.git"
+  },
+  "keywords": [
+    "homework"
+  ],
+  "author": "Evan LaFollette",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/INWYTIA/BurgerBuilder/issues"
+  },
+  "homepage": "https://github.com/INWYTIA/BurgerBuilder#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "mysql": "^2.18.1"
+  }
+}
