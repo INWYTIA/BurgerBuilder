@@ -12,6 +12,7 @@ var burger = {
     });
   },
   update: function(objColVals, condition, cb) {
+    console.log("model " + condition);
     orm.update("burgers", objColVals, condition, function(res) {
       cb(res);
     });

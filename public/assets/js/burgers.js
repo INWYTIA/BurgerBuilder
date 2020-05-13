@@ -3,7 +3,7 @@ $(function() {
     var id = $(this).data("id");
 
     $.ajax("/api/burgers/" + id, {
-      type: "PUT"
+      type: "POST"
     }).then(
       function() {
         location.reload();
